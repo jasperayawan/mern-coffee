@@ -4,9 +4,9 @@ import DataCardCoffee from "../pages/dataCardCoffee"
 const displayCardCoffee = (DataCardCoffee) => {
     return(
         <Card 
-            name="Coffee 1" 
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Dolor dicta culpa nihil eligendi, quam accusamus."/>
+            key={DataCardCoffee.id}
+            name={DataCardCoffee.name} 
+            description={DataCardCoffee.description}/>
     )
 }
 
