@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import  UserContext  from '../userContext'
 
 export default function Header() {
+  const user = useContext(UserContext);
+
+  
   return (
     <header className="w-full z-50 bg-white fixed top-0 left-0">
       <nav className="max-w-5xl mx-auto flex justify-between items-center px-4 py-5">
@@ -21,11 +26,21 @@ export default function Header() {
               <Link>Contact</Link>
             </li>
           </ul>
+          {/* {user && (
+            <>
+              <a href="" onClick={logout} className="bg-slate-800 rounded-md text-white px-3 py-1">logout</a>
+            </>
+          )}
 
-          <Link to='/register' className="ring-1 ring-slate-950 px-4 py-2">Signup</Link>
-          <button className="bg-slate-950 text-slate-500 px-4 py-2">
-            Login
-          </button>
+          {!user && (
+            <>
+              <Link to='/register' className="ring-1 ring-slate-950 px-4 py-2">Signup</Link>
+              <button className="bg-slate-950 text-slate-500 px-4 py-2">
+                Login
+              </button>
+            </>
+          )} */}
+          {user ? `Welcome, ${user.email}` : 'Loading...'}
         </div>
       </nav>
     </header>
