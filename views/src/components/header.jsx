@@ -22,7 +22,7 @@ export default function Header() {
             </li>
           </ul>
 
-          <button className="ring-1 ring-slate-950 px-4 py-2">Signup</button>
+          <Link to='/register' className="ring-1 ring-slate-950 px-4 py-2">Signup</Link>
           <button className="bg-slate-950 text-slate-500 px-4 py-2">
             Login
           </button>

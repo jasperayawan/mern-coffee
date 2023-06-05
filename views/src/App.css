@@ -11,6 +11,9 @@
 .__readmore{
     background-color: #8b4513;
 }
+.__registerSubmit{
+    background-color: #8b4513;
+}
 .imageCoffee_about{
     background-image: url('../src/assets/coffeeBeans.jpg');
     background-position: center;
@@ -19,4 +22,10 @@
 }
 .__featuredCoffee{
     background-color: #faeadb;
+}
+.__rghtSdFrRgstr{
+    background-image: url('../src/assets/coffee4.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
