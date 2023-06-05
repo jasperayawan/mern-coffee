@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.__coffeName{
+    @apply font-bold text-slate-900;
+}
+.__titleEverySection{
+    @apply font-bold text-4xl text-stone-900;
+}
